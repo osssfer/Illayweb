@@ -25,7 +25,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
-    background-image:url(http://bit.ly/2gPLxZ4);
+    background-image:url(/img/bkg/playas-bkg.jpg);
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica;
@@ -53,17 +53,17 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
 @media(min-width: 960px){
 
 }
-  
 .card{
   list-style: none;
   position: relative;
   background-color: transparent !important;
+  border:none !important;
 }
 
 .card:before{
   content: '';
   display: block;
-  padding-bottom: 100%;
+  padding-bottom: 55%;
   width: 100%;
 }
 
@@ -82,11 +82,10 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   transition: 
     filter 200ms linear,
     transform 200ms linear;
-  
 }
 
 .card:hover .card__background{
-  transform: scale(1.05) translateZ(0);
+  transform: scale(1.01) translateZ(0);
   filter: brightness(0.8);
 }
 
@@ -115,4 +114,30 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   line-height: 1.4;
   word-spacing: 100vw;
+}
+input.buscar-punto {
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  width: auto;
+  color: white;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  outline: none; /* Add this line to remove the outline */
+}
+
+input.buscar-punto:focus {
+  border-color: transparent;
+  border-bottom: 1px solid white;
+  box-shadow: none;
+}
+::placeholder {
+  color: white; /* Change the color value as per your requirement */
+  opacity: 1; /* Ensure the placeholder text is fully visible */
+}
+.playa-text{
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: 'Inter';
 }
